@@ -1,14 +1,11 @@
 About
 ======
 
-A base for docker rust projects. Here is an example Dockerfile setting the default rustc to nightly using this base.
+A base for Rust projects that run on Docker. Here is an example Dockerfile using the nightly branch of Rust.
 
 
 ```yaml
-FROM mackeyja92/rustup
-
-# Set default rustc to nightly
-RUN rustup default nightly
+FROM mackeyja92/rustup:nightly
 
 # Copy the code over
 COPY . /code/
