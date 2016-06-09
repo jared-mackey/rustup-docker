@@ -4,7 +4,7 @@ About
 A base for Rust projects that run on Docker. Here is an example Dockerfile using the nightly branch of Rust.
 
 
-```yaml
+```dockerfile
 FROM mackeyja92/rustup:nightly
 
 # Copy the code over
